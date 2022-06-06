@@ -9,6 +9,21 @@
 let str = "fooziman";
 let result = [];
 
+let idx = 0;
+let length = str.length;
+
+while(idx < length){
+    result.push(str.charAt(idx));
+    idx ++;
+}
+
+/*
+while(str.length >= 0){
+    result.push(str.length);
+    str ++;
+}
+*/
+
 
 //export result
 module.exports = result;

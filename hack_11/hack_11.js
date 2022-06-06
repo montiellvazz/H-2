@@ -20,5 +20,35 @@ let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
 
 
+let newArr = numberArray.concat(stringArray);
+
+let length = newArr.length;
+
+for (let newArrIdx = 0; newArrIdx < length; newArrIdx ++) {
+    result.push(newArr[newArrIdx])
+
+    if (newArr[newArrIdx] == "1") { result.splice(newArrIdx, 1, "one");
+    }
+    else if (newArr[newArrIdx] == "3") { result.splice(newArrIdx, 1, "three");
+    }
+    else if (newArr[newArrIdx] == "5") { result.splice(newArrIdx, 1, "five");
+    }
+    else if (newArr[newArrIdx] == "foo") { result.splice(newArrIdx, 1, "f00" );
+    }
+    else if (newArr[newArrIdx] == "bar") { result.splice(newArrIdx, 1, "Bar");
+    }
+    else if (newArr[newArrIdx] == "baz") { result.splice(newArrIdx, 1, "b@z");
+    }
+    else if (newArr[newArrIdx] == "qux") { result.splice(newArrIdx, 1, "quX")
+    }
+    else if (newArr[newArrIdx] == "echo") { result.splice(newArrIdx, 1, "3ch0"); 
+    }
+}
+
+result.unshift("h@ck");
+result.push("h@ck")
+result.splice(6, 0, "h@ck");
+
+
 //export result
 module.exports = result;

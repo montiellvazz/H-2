@@ -7,6 +7,13 @@
  */
 let result = [];
 
+let idx = [1, 3, 5, 7];
+
+idx.map(function(nros){
+    result.push(nros)
+})
+
+
 
 //export result
 module.exports = result;

@@ -9,6 +9,20 @@
 let str = "fooziman";
 let result = [];
 
+let length = str.length;
+
+for(idx = 0; idx < length;idx++){
+    result.push(str.charAt(idx));
+}
+
+
+/*
+for(let iteracion of str){
+    result.push(iteracion);
+}
+*/
+
+
 
 //export result
 module.exports = result;

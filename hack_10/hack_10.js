@@ -16,5 +16,23 @@ let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
 
 
+let arrlength = arr.length;
+
+for (let idx = 0; idx < arrlength; idx ++){
+   if (idx % 2 == 1){
+      result.push(arr[idx]);
+   }
+}
+
+/*
+for (let idx = 0; idx < arrlength; idx ++) {
+   let indice = arr[idx].charAt(0)
+
+   if (indice % 2 == 1) {
+      result.push(arr[indice])
+      }
+}
+*/
+
 //export result
 module.exports = result;
